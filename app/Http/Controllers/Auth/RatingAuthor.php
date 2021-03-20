@@ -23,7 +23,7 @@ class RatingAuthor extends Controller
             return $result;
         }
 
-        if(!in_array($request->rate, array(0,1,2,3,4,5))){
+        if(!in_array($request->rate, array(1,2,3,4,5))){
             $result['status'] = 'Ошибка. Оценка должна быть одним из следующих значений: 1,2,3,4,5';
             return $result;
         }
