@@ -14,6 +14,9 @@ RewriteRule ^(.*)$ public/$1 [L]
   </pre></li>
   <li>Открыть в браузере урл /clear для очистки кеша</li>
   <li>Сделать миграции командой <pre>php artisan migrate</pre></li>
+  <li>Можно выполнить команду для добавления дефолтного администратора<pre>php artisan db:seed</pre>
+  Параметры можно указать в этом файле \database\seeds\UsersTableSeeder.php
+  </li>
   </ul>
   
   <h2>Апи библиотеки:</h2>
