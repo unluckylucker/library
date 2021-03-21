@@ -29,6 +29,8 @@ Route::group(['middleware'=>'auth'], function (){
 
 });
 
+Route::get('link/{token}', 'RestApi\LinkGeneratorController@index')->name('one-time-link');
+
 Route::get('/clear', function () {
     Artisan::call('cache:clear');
     Artisan::call('config:cache');

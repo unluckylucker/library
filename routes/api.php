@@ -25,3 +25,6 @@ Route::group(['middleware'=>'auth:api'], function (){
     Route::post('/rateAuthor', 'Auth\RatingAuthor@index')->name('rateAuthors');
     Route::get('/search', 'RestApi\MainController@search')->name('search');
 });
+
+Route::get('/link', 'RestApi\LinkGeneratorController@generateLink')->name('linkGenerator');
+
